@@ -1,0 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish&family=Outfit:wght@600&display=swap");
+body {
+  background: #1d1d1d;
+  margin-top: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  width: 100%;
+}
+h1::first-letter {
+  color: #ee1d52;
+
+  font-size: 5.3rem;
+}
+header {
+  z-index: 1;
+  background-color: #1d1d1d;
+  position: sticky;
+  top: 0px;
+  box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
+  -webkit-box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
+  -moz-box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 250px;
+  padding-right: 50px;
+}
+
+.elements {
+  color: #fff;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  padding-inline: 50px;
+}
+
+a {
+  width: fit-content;
+}
+a:hover {
+  color: #08fdd8;
+  cursor: pointer;
+}
+.text1 {
+  color: #fff;
+  font-family: "Outfit", sans-serif;
+  font-size: 5.3rem;
+  margin-top: 90px;
+  margin-left: 150px;
+  margin-right: 300px;
+  padding-inline: 100px;
+}
+
+body::before {
+  content: "<body>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1.3rem;
+  position: absolute;
+  margin-top: 5rem;
+  margin-left: 9.5rem;
+}
+body:after {
+  content: "<body/>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 3.8rem;
+  margin-left: 9.5rem;
+}
+h1:before {
+  content: "<h1>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: -1rem;
+  left: 12.5rem;
+}
+h1:after {
+  content: "<h1/>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 4rem;
+  margin-left: 1.6rem;
+}
+
+.firstP {
+  color: #08fdd8;
+  display: block;
+  letter-spacing: 4px;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  margin-left: 100px;
+  padding-left: 150px;
+  top: 0px;
+}
+p::before {
+  content: "<p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: -2rem;
+  margin-left: -0.5rem;
+}
+p::after {
+  content: "</p>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 1.5rem;
+  left: 15rem;
+}
+.button1 {
+  display: inline-block;
+  padding: 0.8em 0.35em 0.8em;
+  width: 230px;
+  border: 0.1em solid #08fdd8;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300px;
+  color: #08fdd8;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+  margin-left: 250px;
+  margin-top: 40px;
+  letter-spacing: 4px;
+}
+.button1:hover {
+  color: black;
+  box-shadow: inset 230px 0 0 0 #08fdd8;
+}
+.text2 {
+  color: #08fdd8;
+  font-family: "Outfit", sans-serif;
+  font-size: 4.3rem;
+  margin-top: 13rem;
+  margin-left: 150px;
+  margin-right: 300px;
+  padding-inline: 100px;
+}
+h2::before {
+  content: "<h2>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: -1rem;
+  left: 13.5rem;
+}
+h2:after {
+  content: "<h2/>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 4.8rem;
+  left: 13.5rem;
+}
+.Portfolio-description {
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  margin-top: 5px;
+  margin-left: 150px;
+  margin-right: 250px;
+  padding-inline: 100px;
+}
+.mywork {
+  text-decoration: none;
+  color: #08fdd8;
+  font-family: "Open Sans", sans-serif;
+}
+.button2 {
+  display: block;
+  padding: 0.8em 0.35em 0.8em;
+  border: 0.1em solid #08fdd8;
+  /* margin: 0 0.3em 0.3em 0; */
+  width: 230px;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300px;
+  color: #08fdd8;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+  margin-right: 0em;
+  margin-left: 60em;
+  margin-top: 0px;
+  letter-spacing: 4px;
+}
+.button2:hover {
+  color: black;
+  box-shadow: inset 230px 0 0 0 #08fdd8;
+}
+section {
+  margin-top: 90px;
+  margin-inline: auto;
+  margin-bottom: 150px; /*sould come back to the marginbottom*/
+}
+.work {
+  width: 20%;
+  height: 250px;
+}
+.work:hover {
+  transform: scale3d(1.2, 1.2, 2);
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+.secondline {
+  display: flex;
+  margin-inline: auto;
+}
+.firstline {
+  display: inline-flex;
+  justify-content: center;
+}
+
+section::before {
+  content: "<section>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1.3rem;
+  position: absolute;
+  margin-top: -3rem;
+  margin-left: 9.5rem;
+}
+section::after {
+  content: "</section>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1.3rem;
+  position: absolute;
+  margin-top: 1rem;
+  margin-left: 9.5rem;
+}
+.text3 {
+  color: #08fdd8;
+  font-family: "Outfit", sans-serif;
+  font-size: 4.3rem;
+  margin-top: 0rem;
+  margin-left: 150px;
+  margin-right: 300px;
+  padding-inline: 100px;
+}
