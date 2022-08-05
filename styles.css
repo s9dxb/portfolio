@@ -16,9 +16,9 @@ header {
   background-color: #1d1d1d;
   position: sticky;
   top: 0px;
-  box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
-  -webkit-box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
-  -moz-box-shadow: 0px 1px 12px -1px rgba(8, 253, 216, 0.79);
+  box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
+  -webkit-box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
+  -moz-box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -249,10 +249,130 @@ section::after {
 }
 .text3 {
   color: #08fdd8;
-  font-family: "Outfit", sans-serif;
+  font-family: "outfit", sans-serif;
   font-size: 4.3rem;
   margin-top: 0rem;
   margin-left: 150px;
   margin-right: 300px;
   padding-inline: 100px;
+}
+.principale {
+  display: block;
+  margin-top: 150px;
+}
+.card {
+  background-color: #1d1d1d;
+  color: #fff;
+  font-size: 1.8rem;
+  font-family: "Outfit", sans-serif;
+  margin: 10px;
+  height: 230px;
+  width: 700px;
+  padding: 30px;
+  border-width: 2px;
+  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
+  border-top-color: #08fdd8;
+  /* border-width: 2px; */
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.35);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.card:hover {
+  transform: scale3d(1.1, 1.1, 2);
+  transition-duration: 150ms;
+  transition-timing-function: ease-out;
+  transition-delay: 0s;
+  cursor: pointer;
+}
+.firstpart {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  padding-inline: 150px;
+}
+.secondpart {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: center;
+  padding-inline: 150px;
+}
+h4 {
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: normal;
+}
+form {
+  margin-top: 70px;
+  display: flex;
+  flex-direction: column;
+}
+#fname,
+#email,
+#subject {
+  margin: 10px;
+  width: 30rem;
+  height: 50px;
+  margin-left: 250px;
+  padding-left: 15px;
+  font-family: "Open Sans", sans-serif;
+  background: #2b2b2b;
+  border: #2b2b2b;
+  font-size: 16px;
+}
+
+#message {
+  margin: 10px;
+  height: 100px;
+  width: 30rem;
+  margin-left: 250px;
+  padding-left: 15px;
+  padding-top: 10px;
+  font-family: "Open Sans", sans-serif;
+  background: #2b2b2b;
+  border: #2b2b2b;
+  font-size: 16px;
+}
+#submit {
+  display: inline-block;
+  padding: 0.8em 0.35em 0.8em;
+  width: 230px;
+  border: 0.1em solid #08fdd8;
+  margin: 0 0.3em 0.3em 0;
+  border-radius: 0.12em;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300px;
+  color: #08fdd8;
+  height: 50px;
+  text-align: center;
+  transition: all 0.2s;
+  margin-left: 250px;
+  margin-top: 30px;
+  letter-spacing: 4px;
+  background: #1d1d1d;
+}
+#submit:hover {
+  color: black;
+  box-shadow: inset 230px 0 0 0 #08fdd8;
+}
+form::before {
+  content: "<form>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: -1rem;
+  left: 13.5rem;
+}
+form::after {
+  content: "<form/>";
+  font-family: "La Belle Aurore", cursive;
+  color: #515152;
+  font-size: 1rem;
+  position: absolute;
+  margin-top: 27rem;
+  left: 13.5rem;
 }
