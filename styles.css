@@ -1,30 +1,48 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Outfit:wght@600&display=swap");
 body {
   background: #1d1d1d;
-  margin-top: 0px;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-top: 0;
+  margin-left: 0;
   width: 100%;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 h1::first-letter {
   color: #ee1d52;
-
   font-size: 5.3rem;
 }
 header {
+  display: flex;
   z-index: 1;
   background-color: #1d1d1d;
   position: sticky;
-  top: 0px;
+  top: 0;
   box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
   -webkit-box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
   -moz-box-shadow: 0px 4px 0px -1px rgba(8, 253, 216, 0.75);
   height: 60px;
-  display: flex;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
-  padding-left: 250px;
-  padding-right: 50px;
+  gap: 10px;
+}
+
+@media (min-width: 600px) {
+  .header {
+    flex-direction: column-reverse;
+  }
+}
+
+.logo {
+  display: flex;
+  position: fixed;
+  left: 20px;
+  text-decoration: none;
+  font-family: "Outfit", sans-serif;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #fff;
 }
 
 .elements {
@@ -35,9 +53,6 @@ header {
   padding-inline: 50px;
 }
 
-a {
-  width: fit-content;
-}
 a:hover {
   color: #08fdd8;
   cursor: pointer;
@@ -50,6 +65,13 @@ a:hover {
   margin-left: 150px;
   margin-right: 300px;
   padding-inline: 100px;
+}
+
+@media (max-width: 500px) {
+  .text1 {
+    width: fit-content;
+    margin-left: 50px;
+  }
 }
 
 body::before {
@@ -99,6 +121,13 @@ h1:after {
   padding-left: 150px;
   top: 0px;
 }
+
+@media (max-width: 500px) {
+  .firstP {
+    width: max-content;
+    /* margin: auto; */
+  }
+}
 p::before {
   content: "<p>";
   font-family: "La Belle Aurore", cursive;
@@ -136,6 +165,12 @@ p::after {
   margin-top: 40px;
   letter-spacing: 4px;
 }
+
+@media (max-width: 500px) {
+  .button1 {
+    margin-top: 50px;
+  }
+}
 .button1:hover {
   color: black;
   box-shadow: inset 230px 0 0 0 #08fdd8;
@@ -148,6 +183,12 @@ p::after {
   margin-left: 150px;
   margin-right: 300px;
   padding-inline: 100px;
+}
+@media (max-width: 500px) {
+  .text2 {
+    width: 100%;
+    margin-left: 0px;
+  }
 }
 h2::before {
   content: "<h2>";
@@ -175,6 +216,13 @@ h2:after {
   margin-right: 250px;
   padding-inline: 100px;
 }
+
+@media (max-width: 500px) {
+  .Portfolio-description {
+    width: 200px;
+    margin-left: 50px;
+  }
+}
 .mywork {
   text-decoration: none;
   color: #08fdd8;
@@ -200,6 +248,12 @@ h2:after {
   margin-top: 0px;
   letter-spacing: 4px;
 }
+
+@media (max-width) {
+  .button2 {
+    justify-content: center;
+  }
+}
 .button2:hover {
   color: black;
   box-shadow: inset 230px 0 0 0 #08fdd8;
@@ -209,6 +263,13 @@ section {
   margin-inline: auto;
   margin-bottom: 150px; /*sould come back to the marginbottom*/
 }
+
+@media (max-width: 500px) {
+  section {
+    width: fit-content;
+  }
+}
+
 .work {
   width: 20%;
   height: 250px;
@@ -257,22 +318,23 @@ section::after {
   padding-inline: 100px;
 }
 .principale {
-  display: block;
-  margin-top: 150px;
+  display: grid;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  gap: 15px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 100px;
+  margin-inline: 150px;
 }
 .card {
   background-color: #1d1d1d;
   color: #fff;
   font-size: 1.8rem;
   font-family: "Outfit", sans-serif;
-  margin: 10px;
-  height: 230px;
-  width: 700px;
   padding: 30px;
   border-width: 2px;
-  /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */
   border-top-color: #08fdd8;
-  /* border-width: 2px; */
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.35);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -283,18 +345,6 @@ section::after {
   transition-timing-function: ease-out;
   transition-delay: 0s;
   cursor: pointer;
-}
-.firstpart {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content: center;
-  padding-inline: 150px;
-}
-.secondpart {
-  margin-bottom: 100px;
-  display: flex;
-  justify-content: center;
-  padding-inline: 150px;
 }
 h4 {
   font-size: 15px;
@@ -375,4 +425,9 @@ form::after {
   position: absolute;
   margin-top: 27rem;
   left: 13.5rem;
+}
+@media (max-width: 500px) {
+  .principale {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
