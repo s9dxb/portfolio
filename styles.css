@@ -1,18 +1,20 @@
 @import url("https://fonts.googleapis.com/css2?family=Mulish&family=Outfit:wght@600&display=swap");
+/* copied */
 body {
   background: #1d1d1d;
   margin-top: 0;
   margin-left: 0;
-  width: 100%;
 }
+/* copied */
 html {
   scroll-behavior: smooth;
 }
-
+/* copied */
 h1::first-letter {
   color: #ee1d52;
   font-size: 5.3rem;
 }
+/* copied */
 header {
   display: flex;
   z-index: 1;
@@ -50,7 +52,8 @@ header {
   text-decoration: none;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
-  padding-inline: 50px;
+  padding-inline: 10px;
+  margin-inline: 30px;
 }
 
 a:hover {
@@ -73,7 +76,7 @@ a:hover {
     margin-left: 50px;
   }
 }
-
+/*copied*/
 body::before {
   content: "<body>";
   font-family: "La Belle Aurore", cursive;
@@ -92,6 +95,7 @@ body:after {
   margin-top: 3.8rem;
   margin-left: 9.5rem;
 }
+/* copied */
 h1:before {
   content: "<h1>";
   font-family: "La Belle Aurore", cursive;
@@ -101,6 +105,7 @@ h1:before {
   margin-top: -1rem;
   left: 12.5rem;
 }
+/* copied */
 h1:after {
   content: "<h1/>";
   font-family: "La Belle Aurore", cursive;
@@ -146,12 +151,14 @@ p::after {
   margin-top: 1.5rem;
   left: 15rem;
 }
+/*copied*/
 .button1 {
   display: inline-block;
   padding: 0.8em 0.35em 0.8em;
   width: 230px;
   border: 0.1em solid #08fdd8;
-  margin: 0 0.3em 0.3em 0;
+  /* margin: 0 0.3em 0.3em 0; */
+  margin: 40px auto auto 250px;
   border-radius: 0.12em;
   box-sizing: border-box;
   text-decoration: none;
@@ -161,8 +168,8 @@ p::after {
   height: 50px;
   text-align: center;
   transition: all 0.2s;
-  margin-left: 250px;
-  margin-top: 40px;
+  /* margin-left: 250px;
+  margin-top: 40px; */
   letter-spacing: 4px;
 }
 
@@ -179,7 +186,7 @@ p::after {
   color: #08fdd8;
   font-family: "Outfit", sans-serif;
   font-size: 4.3rem;
-  margin-top: 13rem;
+  margin-top: 8rem;
   margin-left: 150px;
   margin-right: 300px;
   padding-inline: 100px;
@@ -246,27 +253,32 @@ h2:after {
   margin-right: 0em;
   margin-left: 60em;
   margin-top: 0px;
+  margin-bottom: 100px;
   letter-spacing: 4px;
 }
 
-@media (max-width) {
+@media (max-width: 500px) {
   .button2 {
-    justify-content: center;
+    margin-top: 70px;
+    margin-left: 200px;
   }
 }
 .button2:hover {
   color: black;
   box-shadow: inset 230px 0 0 0 #08fdd8;
 }
-section {
-  margin-top: 90px;
-  margin-inline: auto;
-  margin-bottom: 150px; /*sould come back to the marginbottom*/
+.principale {
+  display: grid;
+  padding: 1rem 1rem;
+  margin: 1rem 1rem;
+  gap: 15px;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 @media (max-width: 500px) {
-  section {
-    width: fit-content;
+  .principale {
+    grid-template-columns: repeat(2, 2fr);
   }
 }
 
@@ -281,14 +293,6 @@ section {
   transition-delay: 0s;
   cursor: pointer;
 }
-.secondline {
-  display: flex;
-  margin-inline: auto;
-}
-.firstline {
-  display: inline-flex;
-  justify-content: center;
-}
 
 section::before {
   content: "<section>";
@@ -297,22 +301,19 @@ section::before {
   font-size: 1.3rem;
   position: absolute;
   margin-top: -3rem;
-  margin-left: 9.5rem;
+  margin-left: 150px;
 }
 section::after {
   content: "</section>";
   font-family: "La Belle Aurore", cursive;
   color: #515152;
   font-size: 1.3rem;
-  position: absolute;
-  margin-top: 1rem;
-  margin-left: 9.5rem;
+  margin-left: 150px;
 }
 .text3 {
   color: #08fdd8;
   font-family: "outfit", sans-serif;
   font-size: 4.3rem;
-  margin-top: 0rem;
   margin-left: 150px;
   margin-right: 300px;
   padding-inline: 100px;
@@ -327,6 +328,13 @@ section::after {
   margin-top: 100px;
   margin-inline: 150px;
 }
+
+@media (max-width: 500px) {
+  .principale {
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+  }
+}
 .card {
   background-color: #1d1d1d;
   color: #fff;
@@ -338,6 +346,7 @@ section::after {
   border-style: solid;
   border-color: rgba(0, 0, 0, 0.35);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-top-color: #e4ee89;
 }
 .card:hover {
   transform: scale3d(1.1, 1.1, 2);
@@ -346,6 +355,7 @@ section::after {
   transition-delay: 0s;
   cursor: pointer;
 }
+
 h4 {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
@@ -358,6 +368,7 @@ form {
   display: flex;
   flex-direction: column;
 }
+
 #fname,
 #email,
 #subject {
@@ -425,9 +436,4 @@ form::after {
   position: absolute;
   margin-top: 27rem;
   left: 13.5rem;
-}
-@media (max-width: 500px) {
-  .principale {
-    grid-template-columns: repeat(1, 1fr);
-  }
 }
